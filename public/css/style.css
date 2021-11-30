@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* font-family */
+    @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');　 
+    /*丸っこくてかわいい丸ゴシック*/
+    /* @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP'); */
+    /*明朝体*/
+
+/* 共通CSS */
+* {
+    box-sizing: border-box;
+  }
+  
+html * {
+    /* outline: 1px dotted red; */
+    font-family: 'M PLUS Rounded 1c', sans-serif; /*丸っこくてかわいい丸ゴシック */
+}
+
+header{
+    height: 60px;
+}
+
+.navy span{
+    font-size: 0.5em;
+}
+
+.navy li{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0 !important;
+  }
+
+.left-top a{
+    color: black;
+    text-decoration: none;
+}
+
+.left-top a:hover{
+    color: rgb(0, 17, 253);
+    /* color:#fb5353; */
+    text-decoration: none;
+}
+
+.icon{
+    width:auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+
+.icon input{
+    margin-left: 30px;
+}
+
+
+.error {
+    color: red;
+    /* color:#fb5353; */
+    font-size: 0.75em;
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+
+
+/* footer.blade.phpのCSS */
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+/* index.blade.phpのCSS */
+
+
+/* addtodo.blade.php */
+.wrap.pattern-5{
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .wrap.pattern-6{
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* viewstatuslayout.blade.phpのCSS */
+/* editlayout.blade.phpのCSS */
+/* viewtaskslayout.blade.phpのCSS */
+.view-content{
+    /* text-align: center; */
+    display: flex;
+    width: 66vw;
+    margin: 0 auto;
+}
+.left-content{
+    width: 15vw;
+}
+
+/* editlayout.blade.phpのCSS */
+/* viewtaskslayout.blade.phpのCSS */
+.top form{
+    margin: 5px;
+}
+
+.sort{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.sort a{
+    color: black;
+    text-decoration: none;
+}
+
+.sort a:hover{
+    color: rgb(0, 17, 253);
+    text-decoration: none;
+}
+
+.card-body p{
+    font-size: 0.75em;
+    margin-bottom: 0.5rem;
+}
+.col-lg-6 img{
+    max-width: 100%;
+}
+.card-body{
+    padding: 0%;
+}
+
+.right-content{
+    width: 62vw;
+}
+
+
+
+/* viewstatuslayout.phpのCSS */
+.right-contents{
+    /* display: flex !important; */
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+input[name='refine-btn'] {
+    position: relative;
+    display: none;
+    padding: 10px;
+  }
+  /* input[name='refine-btn']:checked + label {
+    color: #fff;
+    background-color: #6c757d;
+  } */
+  #refine-1:checked ~ .refine-teims:not(.on),
+  #refine-2:checked ~ .refine-teims:not(.done),
+  #refine-3:checked ~ .refine-teims:not(.over){
+    display: none;
+  }
+
+/* .refine label{
+    margin:5px 0px 5px 30px;
+} */
+
+.backtotop{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: auto;
+    text-align: right;
+}
+
+/* viewtasks.blade.php */
+.task-container{
+    display: flex;
+}
+
+.task-container-left img{
+    width: 150px;
+    height: 200px;
+}
+
+.task-container-right{
+    width: auto;
+    margin-left: 20px;
+}
+
+.task-container-right-bottom{
+    display: flex;
+}
+
+
+
+/* viewall.blade.php */
+.page-tag{
+    justify-content:space-between;
+    width:auto;
+    display: flex;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+}
+.progress-contents{
+    margin: 10px auto;
+}
+.progress-image{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.progress-image img{
+    width:40px;
+    height: 50px;
+}
+
+.progress-image h5{
+    margin: auto 15px;
+}
+
+.totalpage span{
+    /* display: block; */
+    padding: 0 10px;
+}
+
+/* viewtasks.blade.php */
+.border{
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.today{
+    margin-bottom: 10px;
+}
+
+.today h5{
+    color: red;
+}
+
+.todaystask{
+    display: flex;
+    padding: 5px;
+}
+.todaystask p{
+    margin: 0 !important;
+    height: 20px;
+    /* font-size: 0.75em; */
+}
+
+.todaystask-content{
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todaystask img{
+    width: 30px;
+    height: 30px;
+}
+
+.page{
+    display: flex;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+/* viewbooks.blade.php */
+.book-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book{
+    width: 200px;
+    height: 440px;
+    margin: 10px;
+}
+.book img{
+    width: 180px;
+    height: 240px;
+}
+
+.icon2{
+    text-align: right;
+}
+
+/* understand.blade.php */
+input[name='refine-btn2'] {
+    position: relative;
+    display: none;
+    padding: 10px;
+  }
+  /* input[name='refine-btn']:checked + label {
+    color: #fff;
+    background-color: #6c757d;
+  } */
+  #refine-11:checked ~ .refine-teims:not(.one),
+  #refine-22:checked ~ .refine-teims:not(.two),
+  #refine-33:checked ~ .refine-teims:not(.three),
+  #refine-44:checked ~ .refine-teims:not(.four),
+  #refine-55:checked ~ .refine-teims:not(.five){
+    display: none;
+  }
